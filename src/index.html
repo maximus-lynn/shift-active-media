@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <meta name="description" content="<%= htmlWebpackPlugin.options.title %>">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  </head>
+
+  <body>  
+
+      <!-- Header -->
+      <header class="header">
+          <a href="#" class="header__logo">
+            <i class="icon-GCNLogo"></i>
+          </a>
+
+          <button data-search 
+                  class="header__search-btn header__search-btn--position">
+              <i class="icon-search"></i>
+          </button>
+
+          <div class="header__search"
+               data-search-bar>
+            <label>Search for videos</label>
+            <div class="header__container">
+              <input type="text" class="form__input" placeholder="Search">
+              <button class="header__search-btn" data-close-search-bar>
+                  <i class="icon-search"></i>
+              </button>
+            </div>
+          </div>
+      </header>
+
+      <!-- Off Canvas Navigation -->
+      <nav class="off-canvas">
+        <ul>
+          <li class="off-canvas__item">
+            <a data-type="star"
+               class="off-canvas__link">
+              <i class="icon-star-empty"></i>
+            </a>              
+          </li>
+          <li class="off-canvas__item">
+            <a data-type="how-to"
+               class="off-canvas__link">
+              <i class="icon-tools"></i>
+            </a>            
+          </li>
+          <li class="off-canvas__item">
+            <a data-type="presenters"
+               class="off-canvas__link">
+              <i class="icon-group"></i>
+            </a>
+          </li>
+          <li class="off-canvas__item">
+            <a href="https://shop.globalcyclingnetwork.com"
+               class="off-canvas__link">
+              <i class="icon-cart"></i>
+            </a>
+          </li>
+          <li class="off-canvas__item">
+            <a href="https://www.youtube.com/subscription_center?add_user=globalcyclingnetwork"
+               class="off-canvas__link">
+              <i class="icon-sphere"></i>
+            </a>
+          </li>
+        </ul>
+
+        <div class="off-canvas__popup-links"
+              data-container="star">
+              <ul>
+                <li class="off-canvas__popup-item">
+                  <a href="https://www.globalcyclingnetwork.com/category/gcn-show">
+                    <i class="icon-sphere"></i>
+                    <p>GCN Show</p>
+                  </a>
+                </li>
+                <li class="off-canvas__popup-item">
+                  <a href="https://www.globalcyclingnetwork.com/category/top-10s">
+                    <i class="icon-trophy"></i>
+                    <p>Top 10</p>
+                  </a>
+                </li>
+                <li class="off-canvas__popup-item">
+                  <a href="https://www.globalcyclingnetwork.com/category/features">
+                    <i class="icon-font"></i>
+                    <p>Featured</p>
+                  </a>
+                </li>
+              </ul>
+        </div>
+        <div class="off-canvas__popup-links"
+              data-container="how-to">
+              <ul>               
+                <li class="off-canvas__popup-item">
+                  <a href="https://www.globalcyclingnetwork.com/category/how-to">
+                    <i class="icon-wrench"></i>
+                    <p>How to</p>
+                  </a>
+                </li>
+                <li class="off-canvas__popup-item">
+                  <a href="https://www.globalcyclingnetwork.com/category/maintenance-mondays">
+                    <i class="icon-cog"></i>
+                    <p>Maintenance</p>
+                  </a>
+                </li>
+                <li class="off-canvas__popup-item">
+                  <a href="https://www.globalcyclingnetwork.com/category/train-with-gcn">
+                    <i class="icon-directions_bike"></i>
+                    <p>Training</p>
+                  </a>
+                </li> 
+                <li class="off-canvas__popup-item">
+                  <a href="https://www.globalcyclingnetwork.com/category/ask-gcn">
+                    <i class="icon-bubble"></i>
+                    <p>Ask GCN</p>
+                  </a>
+                </li>                 
+              </ul>                                
+        </div>           
+        <div class="off-canvas__popup-links"
+              data-container="presenters">
+              <ul>
+                <li class="off-canvas__popup-item">
+                  <a href="https://www.globalcyclingnetwork.com/presenters/daniel-lloyd">
+                    <img src="assets/images/dan-lloyd.jpg" alt="">
+                    <p>Daniel Lloyd</p>
+                  </a>
+                </li>
+                <li class="off-canvas__popup-item">
+                  <a href="https://www.globalcyclingnetwork.com/presenters/matt-stephens">
+                    <img src="assets/images/matt-stephens.jpg" alt="">
+                    <p>Matt Stephens</p>
+                  </a>
+                </li>
+                <li class="off-canvas__popup-item">
+                  <a href="https://www.globalcyclingnetwork.com/presenters/simon-richardson">
+                    <img src="assets/images/simon-richard.jpg" alt="">
+                    <p>Simon Richardson</p>
+                  </a>
+                </li> 
+                <li class="off-canvas__popup-item">
+                  <a href="https://www.globalcyclingnetwork.com/presenters/tom-last">
+                    <img src="assets/images/tom-last.jpg" alt="">
+                    <p>Tom Last</p>
+                  </a>
+                </li>                   
+              </ul>
+        </div>                   
+      </nav> 
+
+      <main id="video-content">
+
+      </main>
+  </body>
+</html>

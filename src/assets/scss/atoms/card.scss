@@ -1,0 +1,22 @@
+.card {
+    margin: 2rem;
+    padding: 1.5rem; 
+    background: #f1f1f1;
+    display: block;
+    color: palette(brand, secondary);
+    text-decoration: none;
+
+    img {
+        width: 100%;
+    }
+
+    time {
+        font-size: 1.4rem;
+        display: block;
+        margin: 0.6rem 0;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}

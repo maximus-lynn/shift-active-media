@@ -1,0 +1,19 @@
+// Variables, Mixins and Functions
+@import "../app/settings";
+
+// Global Styling
+// Importing Global Atoms
+@import "../atoms/reset";
+@import "../atoms/icons";
+@import "../atoms/typography";
+
+
+// Global Styling
+html {
+	background-color: palette(brand, white);
+}
+
+body {
+	margin: 7rem 0;
+}
+

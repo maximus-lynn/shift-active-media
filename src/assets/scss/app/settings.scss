@@ -1,0 +1,57 @@
+// Settings - Breakpoints 
+// Add variables that will be used across the site.
+// DO NOT PUT HTML SELECTORS HERE (Strictly Variables only)
+
+// Variables
+// For use if page extends from just an Iphone 6
+$breakpoints: (
+	small: "only screen and (min-width: 420px)",
+	medium: "only screen and (min-width: 640px)",
+	large: "only screen and (min-width: 1024px)",
+	xlarge: "only screen and (min-width: 1200px)",
+	xxlarge: "only screen and (min-width: 1440px)"
+);
+
+// Settings - Colour palette
+$palette: (
+	brand: (
+		primary: #c30006, 
+		secondary: #0a0a0a, 
+		off-black: #2b2b2b,
+		grey: #cccccc, 
+		dark-grey: #404040,
+		white: #ffffff
+	),
+	context: (
+		accessibility: #fc0,
+		success: #4caf50,
+		warning: #ffc107,
+		error: #c30006
+	)
+);
+
+// Typography
+// Base Styling
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-percentage: 62.5%;
+$base-font-size: 1.8rem;
+
+// Typography - font size defaults
+$typography: (
+	headings: (
+		h1: 2.4rem,
+		h2: 2.2rem,
+		h3: 2rem,
+		h4: 1.9rem,
+		h5: 1.8rem,
+		h6: 1.5rem
+	),
+	paragraph: (
+		default: $base-font-size,
+		small: 0.8rem
+	)
+);
+
+// Importing Functions and Mixins
+@import "functions";
+@import "mixins";

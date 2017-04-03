@@ -1,0 +1,64 @@
+.header {
+    background: palette(brand, primary);
+    padding: 1.15rem;
+    position: fixed;
+    width: 100%;  
+    top: 0; 
+    left: 0;
+
+    &__logo {
+        text-decoration: none;
+    }
+
+    &__search-btn {
+        height: 50px;
+        width: 50px;
+
+        background: palette(brand, off-black);
+
+        &:focus {
+            outline: none;
+        }
+
+        &--position {
+            position: absolute;
+            top: 0;
+            right: 0; 
+        }
+
+        [class*="icon-"] {
+            font-size: 1.9rem;
+        }
+    }
+
+    &__search {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: -100%;
+        z-index: 100;
+        padding: 2rem;
+        opacity: 0;
+        transition: 500ms all;
+        background: palette(brand, white);
+        border-bottom: solid #c5292d 6px;
+
+        &.active {
+            opacity: 1;
+            left: 0;
+        }
+
+        label {
+            font-weight: 600;
+        }
+    }
+
+    &__container {
+        display: flex;
+        margin-top: 1rem;
+
+        input {
+            flex: 1;
+        }
+    }
+}
